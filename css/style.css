@@ -1,0 +1,314 @@
+.main{
+    top:0px;
+    left: 0px;
+    width: 1560px;
+    height: 720px;
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+#imghero
+{
+     border: 20px solid #FFFFFF;
+     border-radius: 50%;
+     box-shadow: 0px 4px 31px #0000000A;
+}
+.leftimage
+{
+    float:left;
+    top: 78px;
+    margin-top: 72px;
+    margin-left:166px;
+    left: 166px;
+    width: 576px;
+    height: 576px;
+    /* background: transparent url('img/Ellipse 2.png') 0% 0% no-repeat padding-box; */
+    opacity: 1;
+   
+}
+.mainbody
+{
+    float: right;
+     /* margin: 0px 382px 0px 930px; */
+     margin-top:106px;
+     margin-right: 382px;
+     top: 106px;
+     left: 906px;
+     width: 272px;
+     height: 58px;
+     opacity: 1;
+}
+.contentclass
+{
+    margin-top:19.17px;
+    top: 183px;
+    left: 905px;
+    width: 500px;
+    height: 100px;
+    text-align: left;
+    font: normal normal 300 40px/47px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    opacity: 1;
+}
+.expertclass
+{
+    top: 183px;
+    left: 1036px;
+    width: 137px;
+    height: 53px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal 900 40px/53px Roboto;
+    letter-spacing: 0px;
+    color: #C8242F;
+    opacity: 1;
+}
+#loginid
+{
+    top: 315px;
+    left: 904px;
+    width: 300px;
+    height: 33px;
+    margin-top:31.17px;
+    text-align: left;
+    font: normal normal normal 25px/33px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    opacity: 1;
+}
+.usernamediv
+{
+    top: 372px;
+    left: 907px;
+    width: 429px;
+    height: 49px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    /* border: 1px solid #ADADAD; */
+    border-radius: 5px;
+    opacity: 1;
+    margin-top: 23.45px;
+}
+.passworddiv
+{
+    top: 448px;
+    left: 907px;
+    width: 429px;
+    height: 49px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    /* border: 1px solid #ADADAD; */
+    border-radius: 5px;
+    opacity: 1;
+    margin-top:27px;
+}
+.buttondiv
+{
+    top: 527px;
+    left: 906px;
+    width: 138px;
+    height: 45px;
+    background: #C8242F 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    opacity: 1;
+    font: normal normal medium 18px/24px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-top: 30.15px;
+
+}
+#forgotbuttondiv{
+    row-gap: 100px;
+    display: flex;
+    margin-top: 30.15px;
+}
+#btnloginid
+{
+    top: 537px;
+    left: 953px;
+    width: 45px;
+    height: 24px;
+    text-align: left;
+    font: normal normal medium 18px/24px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    position:absolute;
+}
+
+#forgotpasswordid{
+    top: 539px;
+    left: 1150px;
+    width: 200px;
+    height: 20px;
+    text-align: right;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #ADADAD;
+    opacity: 1;
+    /* margin-top: 40px; */
+    position:absolute;
+}
+#newid
+{
+    top: 595px;
+    left: 906px;
+    width: 160px;
+    height: 20px;
+    text-align: left;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #ADADAD;
+    opacity: 1;
+}
+#registerlinkid
+{
+    top: 595px;
+    left: 1070px;
+    width: 88px;
+    height: 20px;
+    text-align: left;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #C8242F;
+    opacity: 1;
+}
+.newregisterdiv
+{
+    margin-top: 23.13px;
+}
+.header
+{
+    top: 0px;
+    left: 0px;
+    width: 1560px;
+    height: 80px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+#menubar
+{
+    top: 34px;
+    left: 29px;
+    width: 18px;
+    height: 12px;
+    background: #000000 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.header{
+    margin-top: 24.47px;
+}
+#headerlogoid
+{
+    top: 25px;
+    left: 72px;
+    width: 142px;
+    height: 30px;
+    opacity: 1;
+    margin-left:25px;
+}
+#searchiconid{
+    top: 32px;
+    left: 291px;
+    width: 16px;
+    height: 21px;
+    background: #0000 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-left: 76.67px;
+}
+#search{
+    top: 28px;
+    left: 321px;
+    width: 49px;
+    height: 21px;
+    text-align: left;
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    
+}
+#notificationid
+{
+    top: 28px;
+    left: 1294px;
+    width: 22px;
+    height: 21px;
+    background: #0000 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-left:600px;
+}
+#profileid{
+    top: 18px;
+    left: 1368px;
+    width: 44px;
+    height: 44px;
+    background: transparent url('img/Ellipse 19.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-left:52.28px;
+}
+#username
+{
+    top: 28px;
+    left: 1440px;
+    width: 68px;
+    height: 21px;
+    text-align: left;
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin-left:12px;
+}
+#downwardarrowid
+{
+    top: 37px;
+    left: 1507px;
+    width: 10px;
+    height: 6px;
+    background: #000000 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.aside
+{
+    top: 80px;
+    left: 0px;
+    width: 242px;
+    height: 1279px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.dashboardmenuclass
+{
+    top: 10px;
+    left: 30px;
+    width: 183px;
+    height: 43px;
+    /* UI Properties */
+    background: #FFF3F4 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+}
+#dashboardid
+{
+    top: 95px;
+    left: 75px;
+    width: 78px;
+    height: 21px;
+    text-align: left;
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #C8242F;
+    opacity: 1;
+}
+#dashboard-activeid
+{
+    top: 120px;
+    left: 48px;
+    width: 20px;
+    height: 20px;
+    background: #C824 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+#analysisclass
+{
+    
+}
