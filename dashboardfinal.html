@@ -32,9 +32,9 @@
         <div class="row">
             <div class="col-2">
                 <div class="justify-content-center p-3">
-                    <div class="d-flex p-2">
+                    <div class="d-flex">
                         <img src="images/dashboard-active.svg" alt="dashboard-default"
-                            class="menubarimage-defaultclass img-fluid">
+                            class="menubarimage-defaultclass ">
                         <span id="dashboardid">Dashboard</span>
                     </div>
                     <div class="d-flex p-2">
@@ -68,13 +68,14 @@
             <div class="col-10">
                 <div class="maindashboard container-fluid mx-2">
                     <div class="pb-3"><span id="dashboardtextid">Dashboard</span></div>
-                    <div class="row">
-                        <div class="col d-flex align-items-center gr-1">
+                    <div class="container px-4">
+                    <div class="row gx-5" style="gap: 10px;">
+                        <div class="col p-3 d-flex align-items-center"  style="background-color: white;">
                             <div class="staricon"><img src="images/star.svg" alt="staricon"></div>
                             <div><span>23,456<br />New
                                     Products</span></div>
                         </div>
-                        <div class="col d-flex align-items-center">
+                        <div class="col d-flex align-items-center"  style="background-color: white;"> 
                             <div class="staricon"><img src="images/new-product.svg" alt="new product"></div>
                             <div><span>2345<br />Added
                                     Products</span></div>
@@ -95,6 +96,7 @@
                                     Sale</span></div>
                         </div>
                     </div>
+                </div>
                     <div class="py-3">
                         <div class="linepiegraphmainclass py-2 flex-container gx-3">
                             <div class="flex-item-left ">
@@ -104,15 +106,15 @@
                                     </div>
                                    
                                     <div class="col-9 d-flex justify-content-end">
-                                        <span class="salestextclass align-items-end ">Weekly
-                                            Monthly
+                                        <span class="salestextclass align-items-end ">Weekly&nbsp;
+                                            Monthly&nbsp;
                                             Yearly</span>
                                     </div>
                                     <div><canvas id="canvas1" style="height: 10px; width: 150px; float: right;"></canvas></div>
                                 </div>
                                 <div class="row">
                                     <div class="col">
-                                        <img src="images/data-graph.png" alt="data-graph" id="datagraphid">
+                                        <img src="images/data-graph.png" class="img-fluid" alt="data-graph" id="datagraphid">
                                     </div>
                                 </div>
                             </div>
@@ -121,12 +123,28 @@
                                     <div class="col-12 align-items-start p-2 h4" style="font-size: 16px; text-align: left;">
                                         Sales by Country                                      
                                     </div>
-                                    <div class="col align-items-center ">
+                                    <div class="col-12 align-items-center ">
                                         <img src="images/pie-chart.svg" alt="piechart" id="piechartid">
                                     </div>
-                                    <div class="col">
-                                        <div class="">
-                                        </div>
+                                    <div class="col-6 d-flex">
+                                        <div class=""><img src="images/radio-checked-icon.svg" alt="errormessageicon"
+                                            class="radiocheckedicon"></div>
+                                    <div class="radioicontextclass">United States of America</div>
+                                    </div>
+                                    <div class="col-6 d-flex">
+                                        <div class=""><img src="images/green-checked-icon.svg" alt="errormessageicon"
+                                            class="radiocheckedicon"></div>
+                                    <div class="radioicontextclass">Canada</div>
+                                    </div>
+                                    <div class="col-6 d-flex">
+                                        <div class=""><img src="images/orange-checked-icon.svg" alt="errormessageicon"
+                                            class="radiocheckedicon"></div>
+                                    <div class="radioicontextclass">Russia</div>
+                                    </div>
+                                    <div class="col-6 d-flex">
+                                        <div class=""><img src="images/yellow-checked-icon.svg" alt="errormessageicon"
+                                            class="radiocheckedicon"></div>
+                                    <div class="radioicontextclass">India</div>
                                     </div>
                                 </div>
                             </div>

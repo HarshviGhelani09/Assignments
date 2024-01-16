@@ -21,25 +21,26 @@
             </div>
 
             <div class="col d-flex justify-content-end offset-md-4">
-                <img src="images/notification-icon.svg" alt="notification-icon" id="profileid">
+                <img src="images/notification-icon.svg" alt="notification-icon" id="profileid">&nbsp;
                 <img src="images/profile.png" alt="profile" id="profileid">
             </div>
-            <div class="col d-flex justify-content-center ">
+            <div class="col d-flex justify-content-center">
                 <span id="usernameid">John Due</span>
-                <img src="images/downward-arrow.svg" alt="downward-arrow">
+                <img src="images/downward-arrow.svg" alt="downward-arrow" id="usernameid">
             </div>
         </div>
         <div class="row">
             <div class="col-2">
                 <div class="justify-content-center p-3">
                     <div class="d-flex p-2">
-                        <img src="images/dashboard-active.svg" alt="dashboard-default"
-                            class="menubarimage-defaultclass img-fluid">
-                        <span id="dashboardid">Dashboard</span>
+                        <img src="images/dashboard-default.svg" alt="dashboard-default"
+                            class="menubarimage-defaultclass">
+                        <span class="menubartext-defaultclass">Dashboard</span>
                     </div>
-                    <div class="d-flex p-2">
-                        <img src="images/graph-default.svg" alt="graph-default" class="menubarimage-defaultclass">
-                        <span class="menubartext-defaultclass">Analysis</span>
+                    <div class="d-flex p-2 badgeclassfailed">
+                        <img src="images/graph-active.svg" alt="graph-default"
+                            class="menubarimage-defaultclass img-fluid">
+                        <span id="dashboardid">Analysis</span>
                     </div>
                     <div class="d-flex p-2">
                         <img src="images/inbox-default.svg" alt="inbox-default" class="menubarimage-defaultclass">
@@ -68,36 +69,50 @@
             <div class="col-10">
                 <div class="py-3"><span id="dashboardtextid">Analysis</span></div>
                 <div class="maindashboard">
+
                     <div class="container">
+
                         <div class="row" style="background-color:#ffff;">
-                            <div class="col-12 my-3 p-1" style="font-size: 29px;font-family: Roboto;">
+                            <div class="col-12 my-3 p-1 maintopicclassname">
                                 One Column
                             </div>
-                            <div class="form-group">
-                                    <input type="email" class="form-control p-2" id="Username" placeholder="Name">
-                                    <select class="form-control my-2 p-2" id="dropdown">
-                                       <option style="font-weight: lighter;">Dropdown</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                      </select>
-                                      <textarea class="form-control" id="textareaonecolid" rows="4"></textarea>
-                                </div>
+
+                            <div class="form-group py-2">
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                                <div class="form-floating py-2">
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                      <option >Open this select menu</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                    <label for="floatingSelect">Works with selects</label>
+                                  </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                    <label for="floatingTextarea2">Multiple line</label>
+                                  </div>
+                            </div>
                         </div>
                         <div class="row gx-2 form-group" style="background-color:#ffff;">
-                            <div class="col-12 my-3 p-1" style="font-size: 26px;font-family: Roboto;">
+                            <div class="col-12 my-3 p-1 maintopicclassname">
                                 Two Columns
                             </div>
-                            </div>
-                            <div class="row form-group" style="background-color:#ffff;">
-                
-                            <div class="col-6 ">
+                        </div>
+                        <div class="row form-group" style="background-color:#ffff;">
+
+                            <div class="col-6 p-2 my-2">
                                 <input type="email" class="form-control" id="Username" placeholder="Name">
                             </div>
                             <div class="col-6">
-                                <fieldset>
-                                    <legend style="margin-top: -15px;font-size: small;">Username</legend>
-                                        <input type="text" class="form-control" placeholder="John Due">
-                                </fieldset>
+                                    <!-- <input type="text" placeholder=" " value="johndoe" class="textbox form-control" />
+                                    <label class="form-label">Username</label> -->
+                                    <div class="input-contain">
+                                        <input type="text" id="fname" name="fname" autocomplete="off" value="" aria-labelledby="placeholder-fname">
+                                        <label class="placeholder-text" for="fname" id="placeholder-fname">
+                                           <div class="text">First Name</div>
+                                        </label>
+                                      </div>
                             </div>
                             <div class="col-6 ">
                                 <input type="password" class="form-control" id="password" placeholder="password">
@@ -105,81 +120,247 @@
                             <div class="col-6">
                                 <select class="form-control my-2 p-2" id="dropdown">
                                     <option style="font-weight: lighter;">Dropdown</option>
-                                     <option>1</option>
-                                     <option>2</option>
-                                   </select>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
                             </div>
                         </div>
-                        <div class="row gx-2 form-group">
-                            <div class="col-12 my-3 p-1" style="font-size: 23px;font-family: Roboto;">
+                        <div class="row gx-2 form-group" style="background-color:#ffff;">
+                            <div class="col-12 my-3 p-1 maintopicclassname">
                                 Three Columns
                             </div>
                             <div class="col-4">
-                                <fieldset>
-                                    <legend style="font-size: medium;">Focus</legend>
-                                        <input type="text" class="form-control" >
-                                </fieldset>
+                                <form>
+                                    <fieldset>
+                                        <legend style="font-size: medium;">Focus</legend>
+                                        <input type="text" class="form-control" />
+                                    </fieldset>
+                                </form>
                             </div>
                             <div class="col-4">
                                 <fieldset>
                                     <legend style="font-size: medium;">Password</legend>
-                                        <input type="text" class="form-control" placeholder="....">
+                                    <input type="text" class="form-control" placeholder="....">
                                 </fieldset>
                             </div>
                             <div class="col-4">
                                 <fieldset style="border-style: dotted;">
                                     <legend style="font-size: medium;">Disabled</legend>
-                                        <input type="text" class="form-control" placeholder="John Due">
+                                    <input type="text" class="form-control" placeholder="John Due">
                                 </fieldset>
                             </div>
+                        </div>
+                        <div class="row gx-1 form-group" style="background-color:#ffff;">
+                            <div class="col-12 my-3 p-1 maintopicclassname">
+                                Four Columns
                             </div>
-                            <div class="row gx-1 form-group">
-                                <div class="col-12 my-3 p-1" style="font-size: 23px;font-family: Roboto;">
-                                    Four Columns
-                                </div>
-                                <div class="col-3">
+                            <div class="col-3">
+                                <form>
                                     <fieldset>
                                         <legend style="font-size: medium;">Designation</legend>
-                                            <input type="text" class="form-control" placeholder="UI Designer">
+                                        <input type="text" class="form-control" placeholder="UI Designer">
                                     </fieldset>
-                                    <label class="py-1 text-danger">Enter valid data</label>
-                                </div>
-                                <div class="col-3" style="margin-top: 1.98rem;">
-                                <input type="text" class="form-control" placeholder="name"> 
-                                <label class="font-size:x-small py-1">Enter your fullname as per ID</label>  
-                                </div>
-                                <div class="col-3">
-                                    <fieldset >
-                                        <legend style="font-size: medium;">Username</legend>
-                                            <input type="text" class="form-control" placeholder="John Due">
-                                    </fieldset>
-                                </div>
-                                <div class="col-3" style="margin-top: 1.5rem;">
-                                    <select class="form-control my-2 p-2" id="dropdown">
-                                        <option style="font-weight: lighter;">Dropdown</option>
-                                         <option>1</option>
-                                         <option>2</option>
-                                       </select>
-                                </div>
-                                </div>
-                                <div class="row form-group">
-                                    <div class="col-12">
-                                        <div class="col-12 my-3 p-1" style="font-size: 23px;font-family: Roboto;">
-                                            Other Design Elements
+                                </form>
+                                <label class="py-1 text-danger">Enter valid data</label>
+                            </div>
+                            <div class="col-3" style="margin-top: 1.98rem;">
+                                <input type="text" class="form-control" placeholder="name">
+                                <label class="font-size:x-small py-1">Enter your fullname as per ID</label>
+                            </div>
+                            <div class="col-3">
+                                <fieldset>
+                                    <legend style="font-size: medium;">Username</legend>
+                                    <input type="text" class="form-control" placeholder="John Due">
+                                </fieldset>
+                            </div>
+                            <div class="col-3" style="margin-top: 1.5rem;">
+                                <select class="form-control my-2 p-2" id="dropdown">
+                                    <option style="font-weight: lighter;">Dropdown</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row form-group" style="background-color:#ffff;">
+                            <div class="col-12 my-3 p-1 maintopicclassname">
+                                Other Design Elements
+                            </div>
+                        </div>
+                        <div class="py-2 topicnameclass">
+                            File Upload
+                        </div>
+                        <div class="row fileuploadclass">
+                            <div class="d-flex">
+                                <div class="">
+                                    <button type="button" class="btn rounded-pill "
+                                        style="border-color: red; width: 125px; height: 45px;">
+                                        <div class="d-flex">
+                                            <div><img src="images/cloud-upload-icon.svg" alt="cloudupload" width="35px">
+                                            </div>
+                                            <div class="align-items-center " style="color: red;">
+                                                Upload</div>
                                         </div>
-                                    <div class="col-12">
-                                        File Upload
-                                        <br/>
-    
+                                    </button>
+                                </div>
+                                <div class="justify-content-center p-2" style="font-size: smaller; margin-top: 11px; ">
+                                    No Item Selected
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-2" style="background-color:#ffff;">
+                            <div class="pb-1 topicnameclass">
+                                Radio Button
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                    id="inlineRadiooption1" value="option1">
+                                <label class="form-check-label" for="inlineRadiooption1">Option 1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                    id="inlineRadiooption2" value="option2" checked>
+                                <label class="form-check-label" for="inlineRadiooption2">Option 2</label>
+                            </div>
+
+                            <div class="commonspaceclass py-2">
+                                <div class="pb-1 topicnameclass">
+                                    CheckBox
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckboxoption1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckboxoption1">Option 1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckboxoption2"
+                                        value="option2" checked>
+                                    <label class="form-check-label" for="inlineCheckboxoption2">Option 2</label>
+                                </div>
+                            </div>
+                            <div class="py-2 ">
+                                <div class="pb-1 topicnameclass">Snackbar
+                                </div>
+                                
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                      <div class="p-2 d-flex" style="border: 2px solid #ff3535">
+                                        <img class="pr-3 snackerimageclass" src="images/error-icon.svg" alt="" />
+                                        <div class="text-danger">This is an error message</div>
+                                      </div>
+                                    </div>
+                                    <div class="col-6 mb-2">
+                                      <div class="p-2 d-flex" style="border: 2px solid #00b9e1">
+                                        <img class="pr-3 snackerimageclass" src="images/info-icon.svg" alt="" />
+                                        <div class="text-info">This is an information message</div>
+                                      </div>
+                                    </div>
+                                  
+                                    <div class="col-6">
+                                      <div class="p-2 d-flex" style="border: 2px solid #ffa800">
+                                        <img class="pr-3 snackerimageclass" src="images/warning-icon.svg" alt="" />
+                                        <div class="text-warning">This is an warning message</div>
+                                      </div>
+                                    </div>
+                                  
+                                    <div class="col-6">
+                                      <div class="p-2 d-flex" style="border: 2px solid #00af27">
+                                        <img class="pr-3 snackerimageclass" src="images/success-icon.svg" alt="" />
+                                        <div class="text-success">This is an success message</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                
+
+                            </div>
+                            <div class="pb-1 topicnameclass">Call to
+                                Action</div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <button type="button"
+                                            class="btn btn-danger btn-lg rounded-pill">Primary</button>
+                                        <button type="button"
+                                            class="btn btn-outline-danger btn-lg rounded-pill">Secondary</button>
                                     </div>
                                 </div>
-
+                            </div>
+                            <div class="pb-1 topicnameclass">Tab</div>
+                            <div class="tab">
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                      <a class="nav-link active tablinks text-danger" aria-current="page" href="#tab1" onclick="openCity(event, 'tab1')">Tab 1</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link tablinks text-secondary" href="#tab2" onclick="openCity(event, 'tab2')">Tab 2</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link tablinks text-secondary" href="#tab3" onclick="openCity(event, 'tab3')">Tab 3</a>
+                                    </li>
+        
+                                  </ul>
+                            </div>
+                            <div id="tab1" class="tabcontent">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    the release of Letraset sheets containing</p>
+                            </div>
+                            <div id="tab2" class="tabcontent">
+                                <p>Tab 2 content</p>
+                            </div>
+                            <div id="tab3" class="tabcontent">
+                                <h3>Tab 3</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    the release of Letraset sheets containing</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-    </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            function openCity(evt, cityName) {
+                // Declare all variables
+                var i, tabcontent, tablinks;
+
+                // Get all elements with class="tabcontent" and hide them
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                // Get all elements with class="tablinks" and remove the class "active"
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+                // Show the current tab, and add an "active" class to the button that opened the tab
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+            $(".field-wrapper .field-placeholder").on("click", function () {
+            $(this).closest(".field-wrapper").find("input").focus();
+        });
+        
+        </script>
+        <script src="js/customs.js"></script>
 </body>
 
 </html>
+<!-- <div class="d-flex">
+                                  
+                                    <form>
+                                        <button type="button" class="btn rounded-pill "
+                                            style="border-color: red; "><span><img src="images/cloud-upload-icon.svg"
+                                                    alt="cloudupload">Upload</span></button>
+                                    </form>
+                                </div> -->
