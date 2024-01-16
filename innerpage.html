@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>InnerPage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="main container-fluid">
+        <div class="row header align-items-center img-fluid px-2 " style="padding-top: 25px;">
+            <div class="col-md-2 d-flex">
+                <img src="images/menu-bar.svg" alt="image-menubar"> <img src="images/header-logo.svg" alt="header-logo">
+            </div>
+            <div class="col-md-2 d-flex">
+                <img src="images/search-icon.svg" alt="search-icon" id="searchiconid"> <span id="searchid">Search</span>
+            </div>
+
+            <div class="col d-flex justify-content-end offset-md-4">
+                <img src="images/notification-icon.svg" alt="notification-icon" id="profileid">
+                <img src="images/profile.png" alt="profile" id="profileid">
+            </div>
+            <div class="col d-flex justify-content-center ">
+                <span id="usernameid">John Due</span>
+                <img src="images/downward-arrow.svg" alt="downward-arrow">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <div class="justify-content-center p-3">
+                    <div class="d-flex p-2">
+                        <img src="images/dashboard-active.svg" alt="dashboard-default"
+                            class="menubarimage-defaultclass img-fluid">
+                        <span id="dashboardid">Dashboard</span>
+                    </div>
+                    <div class="d-flex p-2">
+                        <img src="images/graph-default.svg" alt="graph-default" class="menubarimage-defaultclass">
+                        <span class="menubartext-defaultclass">Analysis</span>
+                    </div>
+                    <div class="d-flex p-2">
+                        <img src="images/inbox-default.svg" alt="inbox-default" class="menubarimage-defaultclass">
+                        <span class="menubartext-defaultclass">Inbox</span>
+                    </div>
+                    <div class="d-flex p-2">
+                        <img src="images/clock-default.svg" alt="history-default" class="menubarimage-defaultclass">
+                        <span class="menubartext-defaultclass">History</span>
+                    </div>
+                    <div class="d-flex p-2">
+                        <img src="images/user-default.svg" alt="user-default" class="menubarimage-defaultclass">
+                        <span class="menubartext-defaultclass">Users</span>
+                    </div>
+                    <div class="d-flex p-2">
+                        <img src="images/maintenance-default.svg" alt="maintenance-default"
+                            class="menubarimage-defaultclass">
+                        <span class="menubartext-defaultclass">Maintanence</span>
+                    </div>
+                    <div class="d-flex p-2">
+                        <img src="images/setting-default.svg" alt="maintenance-default"
+                            class="menubarimage-defaultclass">
+                        <span class="menubartext-defaultclass">Settings</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="py-3"><span id="dashboardtextid">Analysis</span></div>
+                <div class="maindashboard">
+                    <div class="container">
+                        <div class="row" style="background-color:#ffff;">
+                            <div class="col-12 my-3 p-1" style="font-size: 29px;font-family: Roboto;">
+                                One Column
+                            </div>
+                            <div class="form-group">
+                                    <input type="email" class="form-control p-2" id="Username" placeholder="Name">
+                                    <select class="form-control my-2 p-2" id="dropdown">
+                                       <option style="font-weight: lighter;">Dropdown</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                      </select>
+                                      <textarea class="form-control" id="textareaonecolid" rows="4"></textarea>
+                                </div>
+                        </div>
+                        <div class="row gx-2 form-group" style="background-color:#ffff;">
+                            <div class="col-12 my-3 p-1" style="font-size: 26px;font-family: Roboto;">
+                                Two Columns
+                            </div>
+                            </div>
+                            <div class="row form-group" style="background-color:#ffff;">
+                
+                            <div class="col-6 ">
+                                <input type="email" class="form-control" id="Username" placeholder="Name">
+                            </div>
+                            <div class="col-6">
+                                <fieldset>
+                                    <legend style="margin-top: -15px;font-size: small;">Username</legend>
+                                        <input type="text" class="form-control" placeholder="John Due">
+                                </fieldset>
+                            </div>
+                            <div class="col-6 ">
+                                <input type="password" class="form-control" id="password" placeholder="password">
+                            </div>
+                            <div class="col-6">
+                                <select class="form-control my-2 p-2" id="dropdown">
+                                    <option style="font-weight: lighter;">Dropdown</option>
+                                     <option>1</option>
+                                     <option>2</option>
+                                   </select>
+                            </div>
+                        </div>
+                        <div class="row gx-2 form-group">
+                            <div class="col-12 my-3 p-1" style="font-size: 23px;font-family: Roboto;">
+                                Three Columns
+                            </div>
+                            <div class="col-4">
+                                <fieldset>
+                                    <legend style="font-size: medium;">Focus</legend>
+                                        <input type="text" class="form-control" >
+                                </fieldset>
+                            </div>
+                            <div class="col-4">
+                                <fieldset>
+                                    <legend style="font-size: medium;">Password</legend>
+                                        <input type="text" class="form-control" placeholder="....">
+                                </fieldset>
+                            </div>
+                            <div class="col-4">
+                                <fieldset style="border-style: dotted;">
+                                    <legend style="font-size: medium;">Disabled</legend>
+                                        <input type="text" class="form-control" placeholder="John Due">
+                                </fieldset>
+                            </div>
+                            </div>
+                            <div class="row gx-1 form-group">
+                                <div class="col-12 my-3 p-1" style="font-size: 23px;font-family: Roboto;">
+                                    Four Columns
+                                </div>
+                                <div class="col-3">
+                                    <fieldset>
+                                        <legend style="font-size: medium;">Designation</legend>
+                                            <input type="text" class="form-control" placeholder="UI Designer">
+                                    </fieldset>
+                                    <label class="py-1 text-danger">Enter valid data</label>
+                                </div>
+                                <div class="col-3" style="margin-top: 1.98rem;">
+                                <input type="text" class="form-control" placeholder="name"> 
+                                <label class="font-size:x-small py-1">Enter your fullname as per ID</label>  
+                                </div>
+                                <div class="col-3">
+                                    <fieldset >
+                                        <legend style="font-size: medium;">Username</legend>
+                                            <input type="text" class="form-control" placeholder="John Due">
+                                    </fieldset>
+                                </div>
+                                <div class="col-3" style="margin-top: 1.5rem;">
+                                    <select class="form-control my-2 p-2" id="dropdown">
+                                        <option style="font-weight: lighter;">Dropdown</option>
+                                         <option>1</option>
+                                         <option>2</option>
+                                       </select>
+                                </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-12">
+                                        <div class="col-12 my-3 p-1" style="font-size: 23px;font-family: Roboto;">
+                                            Other Design Elements
+                                        </div>
+                                    <div class="col-12">
+                                        File Upload
+                                        <br/>
+    
+                                    </div>
+                                </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
