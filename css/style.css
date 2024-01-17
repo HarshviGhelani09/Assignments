@@ -98,12 +98,11 @@ img {
     margin-top: 23.13px;
 }
 .aside {
-    width: 10%;
+    width: 15%;
 }
 .header {
-    width: 1560px;
+    width: 100%;
     height: 80px;
-
     background: #FFFFFF 0% 0% no-repeat padding-box;
     align-items: center;
 
@@ -147,7 +146,10 @@ img {
     letter-spacing: 0px;
     color: #3E3E3E;
 }
-
+.bgrowcards{
+    justify-content: center;
+    background-color: white;
+}
 #dashboardtextid {
     font-size: xx-large;
 }
@@ -167,6 +169,7 @@ img {
     flex-direction: row;
     font-size: 30px;
     text-align: center;
+    
 }
 
 .flex-item-left {
@@ -199,7 +202,7 @@ img {
 }
 
 .radiocheckedicon {
-    height: 30px;
+    height: 50px;
     width: 50px;
 }
 
@@ -318,9 +321,9 @@ img {
 }
 input{
     height: 5rem;
-    width: 40rem;
-    border: 2px solid black;
-    border-radius: 1rem;
+    width: 100%;
+    border: 1px solid gray;
+    /* border-radius: 1rem; */
 }
 .placeholder-text{
     position: absolute;
@@ -333,46 +336,47 @@ input{
     display: flex;
     align-items: center;
 }
-.placeholder-text{
+.placeholder-text,.placeholder-textdotted{
     pointer-events: none;
 }
+.placeholder-textdotted
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 3px dotted transparent;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
 .text{
-    font-size: 1.4rem;
+    font-size:large;
     padding: 0 0.5rem;
     background-color: transparent;
-    color: black;
+    color: gray;
 }
 
-input, .placeholder-text{
+input, .placeholder-text,.placeholder-textdotted{
     font-size: 1.4rem;
     padding: 0 1.2rem;
 }
 input:focus{
     outline: none;
-    border-color: blueviolet;
+    border-color: gray;
 }
-input:focus + .placeholder-text .text{
+input:focus + .placeholder-text .text, input:focus + .placeholder-textdotted .text {
     background-color: white;
     font-size: 1.1rem;
     color: black;
     transform: translate(0, -170%);
-    border-color: blueviolet;
-    color: blueviolet;
+    border-color: gray;
+    color: gray;
 }
 .text{
     transform: translate(0);
     transition: transform 0.15s ease-out, font-size 0.15s ease-out, background-color 0.2s ease-out, color 0.15s ease-out;
-}
-input:focus + .placeholder-text .text, :not(input[value=""]) + .placeholder-text .text{
-    background-color: white;
-    font-size: 1.1rem;
-    color: black;
-    transform: translate(0, -170%);
-}
-
-input:focus + .placeholder-text .text{
-    border-color: blueviolet;
-    color: blueviolet;
 }
 @media screen and (max-width: 990px) {
     .contentclass {
@@ -381,16 +385,14 @@ input:focus + .placeholder-text .text{
 }
 
 @media screen and (max-width:940px) {
-    .menubartext-defaultclass {
+    .menubarimage-defaultclass {
         display: none;
     }
-    .menubarimage-defaultclass{
-        width: 28px;
-        height: 28px;
-    }
+
     .maindashboard {
-        /* padding: 5px; */
+        padding: 5px;
     }
+    
 }
 
 @media screen and (max-width:767px) {
@@ -402,7 +404,7 @@ input:focus + .placeholder-text .text{
     #profileid,
     #searchiconid,
     #searchid,
-    #usernameid {
+    #usernameid,#downwardarrow{
         display: none;
     }
 
@@ -423,21 +425,24 @@ input:focus + .placeholder-text .text{
     }
 }
 
-@media screen and (max-width:660px) {}
+@media screen and (max-width:680px) {
+    .flex-containerthreecol, .flex-containerfourcol
+    {
+        flex-direction: row;
+        column-gap: 10px;
+        
+    }
+}
 
 @media screen and (max-width:500px) {
     #dashboardtextid {
         margin-left: 20px;
     }
-}
-
-/*
-
-/* @media screen and (max-width:760px){
-    .menubarimage-defaultclass{
-        width: 30px;
-        height: 20px; 
-        background: #0000 0% 0% no-repeat padding-box;
-        opacity: 1;
+    .aside{
+        display: none;
     }
-} */
+    .maindashboard{
+        width: 100%;
+    }
+
+}

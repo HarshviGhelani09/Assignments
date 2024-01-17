@@ -81,12 +81,12 @@
                                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
                                 <div class="form-floating py-2">
                                     <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                      <option >Open this select menu</option>
+                                      <option >Dropdown</option>
                                       <option value="1">One</option>
                                       <option value="2">Two</option>
                                       <option value="3">Three</option>
                                     </select>
-                                    <label for="floatingSelect">Works with selects</label>
+                                    <!-- <label for="floatingSelect">Works with selects</label> -->
                                   </div>
                                 <div class="form-floating">
                                     <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
@@ -101,60 +101,66 @@
                         </div>
                         <div class="row form-group" style="background-color:#ffff;">
 
-                            <div class="col-6 p-2 my-2">
-                                <input type="email" class="form-control" id="Username" placeholder="Name">
+                            <div class="col-6 p-2 my-2" >
+                                <input type="email" class="form-control" id="Username" placeholder="Name" >
                             </div>
-                            <div class="col-6">
-                                    <!-- <input type="text" placeholder=" " value="johndoe" class="textbox form-control" />
-                                    <label class="form-label">Username</label> -->
+                            <div class="col-6 p-2 my-2" >
                                     <div class="input-contain">
                                         <input type="text" id="fname" name="fname" autocomplete="off" value="" aria-labelledby="placeholder-fname">
                                         <label class="placeholder-text" for="fname" id="placeholder-fname">
                                            <div class="text">First Name</div>
                                         </label>
                                       </div>
-                            </div>
+                                    </div>
                             <div class="col-6 ">
                                 <input type="password" class="form-control" id="password" placeholder="password">
                             </div>
-                            <div class="col-6">
-                                <select class="form-control my-2 p-2" id="dropdown">
-                                    <option style="font-weight: lighter;">Dropdown</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                </select>
+                            <div class="col-6 ">
+                                <div class="form-floating py-2">
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                      <option >Dropdown</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                    
+                                  </div>
                             </div>
                         </div>
-                        <div class="row gx-2 form-group" style="background-color:#ffff;">
+                        <div class="row gx-2 form-group flex-containerthreecol" style="background-color:#ffff;">
                             <div class="col-12 my-3 p-1 maintopicclassname">
                                 Three Columns
                             </div>
                             <div class="col-4">
-                                <form>
-                                    <fieldset>
-                                        <legend style="font-size: medium;">Focus</legend>
-                                        <input type="text" class="form-control" />
-                                    </fieldset>
-                                </form>
+                                <div class="input-contain">
+                                    <input type="text" id="fname" name="fname" autocomplete="off" value="" aria-labelledby="placeholder-fname">
+                                    <label class="placeholder-text" for="fname" id="placeholder-fname">
+                                       <div class="text">Focus</div>
+                                    </label>
+                                  </div>
                             </div>
                             <div class="col-4">
-                                <fieldset>
-                                    <legend style="font-size: medium;">Password</legend>
-                                    <input type="text" class="form-control" placeholder="....">
-                                </fieldset>
+                                <div class="input-contain">
+                                    <input type="text" id="fname" name="fname" autocomplete="off" value="" aria-labelledby="placeholder-fname">
+                                    <label class="placeholder-text" for="fname" id="placeholder-fname">
+                                       <div class="text">Password</div>
+                                    </label>
+                                  </div>
                             </div>
                             <div class="col-4">
-                                <fieldset style="border-style: dotted;">
-                                    <legend style="font-size: medium;">Disabled</legend>
-                                    <input type="text" class="form-control" placeholder="John Due">
-                                </fieldset>
+                                <div class="input-contain">
+                                    <input type="text" id="fname" name="fname" autocomplete="off" value="" aria-labelledby="placeholder-fname">
+                                    <label class="placeholder-textdotted" for="fname" id="placeholder-fname" >
+                                       <div class="text" >Disabled</div>
+                                    </label>
+                                  </div>
                             </div>
                         </div>
                         <div class="row gx-1 form-group" style="background-color:#ffff;">
                             <div class="col-12 my-3 p-1 maintopicclassname">
                                 Four Columns
                             </div>
-                            <div class="col-3">
+                            <div class="col-3 flex-containerfourcol">
                                 <form>
                                     <fieldset>
                                         <legend style="font-size: medium;">Designation</legend>
